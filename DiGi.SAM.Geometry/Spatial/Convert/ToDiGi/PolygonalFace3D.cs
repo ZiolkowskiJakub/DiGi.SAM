@@ -6,7 +6,7 @@ namespace DiGi.SAM.Geometry.Spatial
 {
     public static partial class Convert
     {
-        public static DiGi.Geometry.Spatial.Classes.PolygonalFace3D ToDiGi(this Face3D face3D, double tolerance = Core.Constans.Tolerance.Distance)
+        public static DiGi.Geometry.Spatial.Classes.PolygonalFace3D ToDiGi(this Face3D face3D)
         {
             Plane plane_SAM = face3D?.GetPlane();
             if (plane_SAM == null)

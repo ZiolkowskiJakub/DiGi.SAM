@@ -20,7 +20,7 @@ namespace DiGi.SAM.Geometry.Planar
             List<IClosed2D> internalEdges_SAM = face2D.InternalEdge2Ds;
             if(internalEdges_SAM != null || internalEdges_SAM.Count != 0)
             {
-                internalEdges = new List<IPolygonal2D>();
+                internalEdges = [];
 
                 foreach(IClosed2D internalEdge_SAM in internalEdges_SAM)
                 {

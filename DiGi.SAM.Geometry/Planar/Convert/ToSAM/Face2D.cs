@@ -19,7 +19,7 @@ namespace DiGi.SAM.Geometry.Planar
             List<DiGi.Geometry.Planar.Interfaces.IPolygonal2D> internalEdges = polygonalFace2D.InternalEdges;
             if(internalEdges != null || internalEdges.Count != 0)
             {
-                internalEdges_SAM = new List<Polygon2D>();
+                internalEdges_SAM = [];
 
                 foreach(DiGi.Geometry.Planar.Interfaces.IPolygonal2D internalEdge in internalEdges)
                 {
