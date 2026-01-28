@@ -12,7 +12,7 @@ namespace DiGi.SAM.Geometry.Spatial
             }
 
             DiGi.Geometry.Spatial.Classes.Plane plane = polygon3D.GetPlane().ToDiGi();
-            if(plane == null)
+            if (plane == null)
             {
                 return null;
             }

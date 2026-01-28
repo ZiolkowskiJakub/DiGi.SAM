@@ -13,7 +13,7 @@ namespace DiGi.SAM.Geometry.Spatial
             }
 
             Plane plane = polygonalFace3D.Plane.ToSAM();
-            if(plane == null)
+            if (plane == null)
             {
                 return null;
             }

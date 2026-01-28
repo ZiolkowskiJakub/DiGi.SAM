@@ -17,14 +17,14 @@ namespace DiGi.SAM.Geometry.Planar
             List<Polygon2D> internalEdges_SAM = null;
 
             List<DiGi.Geometry.Planar.Interfaces.IPolygonal2D> internalEdges = polygonalFace2D.InternalEdges;
-            if(internalEdges != null || internalEdges.Count != 0)
+            if (internalEdges != null || internalEdges.Count != 0)
             {
                 internalEdges_SAM = [];
 
-                foreach(DiGi.Geometry.Planar.Interfaces.IPolygonal2D internalEdge in internalEdges)
+                foreach (DiGi.Geometry.Planar.Interfaces.IPolygonal2D internalEdge in internalEdges)
                 {
                     Polygon2D internalEdge_SAM = ToSAM(internalEdge as DiGi.Geometry.Planar.Classes.Polygon2D);
-                    if(internalEdge_SAM == null)
+                    if (internalEdge_SAM == null)
                     {
                         continue;
                     }

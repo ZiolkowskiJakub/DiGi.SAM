@@ -4,7 +4,6 @@
     {
         //public static Aperture ToSAM(this DiGi.Analytical.Building.Classes.Win)
         //{
-
         //}
     }
 }
