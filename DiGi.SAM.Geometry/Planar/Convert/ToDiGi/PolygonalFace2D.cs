@@ -6,7 +6,7 @@ namespace DiGi.SAM.Geometry.Planar
 {
     public static partial class Convert
     {
-        public static DiGi.Geometry.Planar.Classes.PolygonalFace2D ToDiGi(this Face2D face2D, double tolerance = Core.Constants.Tolerance.Distance)
+        public static DiGi.Geometry.Planar.Classes.PolygonalFace2D ToDiGi(this Face2D face2D, double tolerance = Core.Constans.Tolerance.Distance)
         {
             if (face2D == null)
             {
