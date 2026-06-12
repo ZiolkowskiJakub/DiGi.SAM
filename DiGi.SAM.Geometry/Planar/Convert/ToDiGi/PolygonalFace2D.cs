@@ -1,4 +1,4 @@
-﻿using DiGi.Geometry.Planar.Interfaces;
+using DiGi.Geometry.Planar.Interfaces;
 using SAM.Geometry.Planar;
 using System.Collections.Generic;
 
@@ -6,6 +6,12 @@ namespace DiGi.SAM.Geometry.Planar
 {
     public static partial class Convert
     {
+        /// <summary>
+        /// Converts a <see cref="Face2D"/> instance to a <see cref="DiGi.Geometry.Planar.Classes.PolygonalFace2D"/>.
+        /// </summary>
+        /// <param name="face2D">The source face to convert.</param>
+        /// <param name="tolerance">The distance tolerance used for the conversion process.</param>
+        /// <returns>The converted <see cref="DiGi.Geometry.Planar.Classes.PolygonalFace2D"/> instance, or <c>null</c> if the input <paramref name="face2D"/> is null.</returns>
         public static DiGi.Geometry.Planar.Classes.PolygonalFace2D ToDiGi(this Face2D face2D, double tolerance = Core.Constants.Tolerance.Distance)
         {
             if (face2D == null)

@@ -5,6 +5,11 @@ namespace DiGi.SAM.Geometry.Planar
 {
     public static partial class Convert
     {
+        /// <summary>
+        /// Converts a <see cref="DiGi.Geometry.Planar.Classes.PolygonalFace2D"/> instance to a <see cref="Face2D"/> instance.
+        /// </summary>
+        /// <param name="polygonalFace2D">The source polygonal face 2D object to be converted.</param>
+        /// <returns>The converted <see cref="Face2D"/> object, or null if the input <paramref name="polygonalFace2D"/> is null.</returns>
         public static Face2D ToSAM(this DiGi.Geometry.Planar.Classes.PolygonalFace2D polygonalFace2D)
         {
             if (polygonalFace2D == null)
